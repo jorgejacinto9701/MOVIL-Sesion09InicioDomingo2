@@ -4,9 +4,21 @@
     android:layout_height="match_parent"
     android:orientation="horizontal"
     android:weightSum="7"
-    android:padding="10dp"
+    android:padding="2dp"
     >
 
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/idCrudEditorialItemID"
+        android:layout_weight="1"
+        />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/idCrudEditorialItemRazSocial"
+        android:layout_weight="6"
+        />
 
 
 </androidx.appcompat.widget.LinearLayoutCompat>
