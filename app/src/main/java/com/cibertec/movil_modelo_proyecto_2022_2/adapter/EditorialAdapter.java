@@ -36,7 +36,7 @@ public class EditorialAdapter extends ArrayAdapter<Editorial>  {
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         LayoutInflater inflater = (LayoutInflater)context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
-        View row = inflater.inflate(R.layout.activity_edtorial_consulta_item, parent, false);
+        View row = inflater.inflate(R.layout.activity_editorial_consulta_item, parent, false);
 
         Editorial obj = lista.get(position);
 
@@ -55,11 +55,11 @@ public class EditorialAdapter extends ArrayAdapter<Editorial>  {
                 try {
                     String ruta ;
                     if (obj.getIdEditorial() == 1){
-                        ruta = "https://i.postimg.cc/bv5nPxj9/etiquetanegra.jpg";
+                        ruta = "https://i.postimg.cc/jdCrzb72/etiquetanegra.jpg";
                     }else if (obj.getIdEditorial() == 2){
-                        ruta = "https://i.postimg.cc/50FC2X4d/planeta.jpg";
+                        ruta = "https://i.postimg.cc/zXMY7cCj/planeta.jpg";
                     }else{
-                        ruta = "https://i.postimg.cc/gjF6XGjw/no-disponible.png";
+                        ruta = "https://i.postimg.cc/P5wsRQKk/no-disponible.png";
                     }
                     URL rutaImagen  = new URL(ruta);
                     InputStream is = new BufferedInputStream(rutaImagen.openStream());

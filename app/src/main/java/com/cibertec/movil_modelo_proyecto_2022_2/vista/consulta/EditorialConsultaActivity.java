@@ -1,7 +1,5 @@
 package com.cibertec.movil_modelo_proyecto_2022_2.vista.consulta;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -38,7 +36,7 @@ public class EditorialConsultaActivity extends NewAppCompatActivity {
         btnFiltrar = findViewById(R.id.idConsEditFiltrar);
 
         lstEditorial = findViewById(R.id.idConsEditListView);
-        adaptador = new EditorialAdapter(this, R.layout.activity_edtorial_consulta_item, data);
+        adaptador = new EditorialAdapter(this, R.layout.activity_editorial_consulta_item, data);
         lstEditorial.setAdapter(adaptador);
 
         serviceEditorial = ConnectionRest.getConnection().create(ServiceEditorial.class);
